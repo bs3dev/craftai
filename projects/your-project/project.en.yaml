@@ -1,0 +1,75 @@
+# ===============================================
+#  CraftAI Project Definition
+#  Mission: Rebel Recruitment - Landing Page
+# ===============================================
+
+project:
+  id: rebel-recruitment
+  name: "Rebel Recruitment Portal"
+  description: |
+    Create a secret recruitment landing page for the Rebel Alliance.
+    The goal is to inspire potential allies to join the resistance against the Empire.
+  goals:
+    - Capture rebel leads securely
+    - Communicate core rebel values: courage, freedom, and hope
+    - Reflect a high-tech, subversive visual identity
+  owner: "Leia Organa"
+  priority: high
+
+agents:
+  - id: Forge
+    path: ./agents/forge.yaml
+    role: "Responsible for building, connecting, and maintaining the code structure."
+    enabled: true
+  - id: Nova
+    path: ./agents/nova.yaml
+    role: "Specialist in interfaces and visual identity."
+    enabled: true
+  - id: Quill
+    path: ./agents/quill.yaml
+    role: "Writes content that represents the product and engages the audience."
+    enabled: true
+  - id: Echo
+    path: ./agents/echo.yaml
+    role: "Advocates for user experience. Maps and refines journeys."
+    enabled: true
+  - id: Shield
+    path: ./agents/shield.yaml
+    role: "Ensures robustness, security, and reliability through testing."
+    enabled: true
+  - id: Pulse
+    path: ./agents/pulse.yaml
+    role: "Aligns agent output with strategic objectives of the project."
+    enabled: true
+  - id: Scope
+    path: ./agents/scope.yaml
+    role: "Analyzes competition and trends to inform decisions."
+    enabled: false
+  - id: Scroll
+    path: ./agents/scroll.yaml
+    role: "Documents what has been built in a clear and accessible way."
+    enabled: false
+
+context:
+  repo: ./projects/rebel-recruitment
+
+  files:
+    branding_guidelines: ./branding/*
+    technical_stack: ./tech/*
+    code_conventions: ./tech/*-code-style.md
+    architectural_adrs: ./tech/adrs/*
+    tone_of_voice: ./content/*
+    product_vision: ./product/*
+    analytics: ./data/analytics/*
+
+  assets:
+    - ./branding/rebel-logo.svg
+    - ./branding/holo-colors.md
+
+  constraints:
+    - "Follow the visual identity and rebel standards"
+    - "Prioritize responsiveness and accessibility"
+    - "Avoid any traces that could reveal rebel base location"
+
+  tone: "Inspiring, strategic, galactic"
+  audience: "Rebel allies, pilots, mercenaries"
