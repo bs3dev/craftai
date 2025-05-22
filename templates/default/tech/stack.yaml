@@ -1,0 +1,47 @@
+id: stack
+title: "Technical Stack Overview"
+description: >
+  Defines the core technologies and services used in the project, guiding implementation, deployment, and maintenance processes.
+
+used_by_agents:
+  - Forge
+  - Shield
+  - Scroll
+
+key_elements:
+  - frontend_framework
+  - backend_framework
+  - database
+  - authentication
+  - hosting
+  - ci_cd
+  - monitoring
+  - testing
+
+required_sections:
+  - "Frontend Framework"
+  - "Backend Framework"
+  - "Database"
+  - "Authentication"
+  - "Hosting"
+  - "CI/CD Pipeline"
+  - "Monitoring & Logging"
+  - "Testing Strategy"
+
+reference_links:
+  - label: "AWS Modern Application Strategy"
+    url: "https://docs.aws.amazon.com/decision-guides/latest/modern-apps-strategy-on-aws-how-to-choose/modern-apps-strategy-on-aws-how-to-choose.html"
+  - label: "AWS Amplify Fullstack Applications"
+    url: "https://aws.amazon.com/blogs/mobile/the-ctos-guide-to-building-fullstack-applications-with-aws-amplify/"
+  - label: "Azure Databricks CI/CD Best Practices"
+    url: "https://learn.microsoft.com/azure/databricks/dev-tools/ci-cd/best-practices"
+  - label: "Google Cloud Modernizing Data Tech Stack"
+    url: "https://cloud.google.com/resources/modernizing-data-tech-stack-ebook"
+  - label: "IBM Full Stack Mobile Development"
+    url: "https://developer.ibm.com/learningpaths/get-started-mobile-dev-android/full-stack-mobile-dev"
+
+compliance_checklist:
+  - "Are all core technologies and services clearly defined?"
+  - "Is the CI/CD pipeline outlined with tools and processes?"
+  - "Are monitoring and logging strategies specified?"
+  - "Is the testing strategy comprehensive and includes unit, integration, and end-to-end tests?"

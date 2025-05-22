@@ -10,8 +10,8 @@ Each file represents a key discipline — engineering, design, product, data, or
 | File Name                  | Description                                               | Used By Agents         |
 |---------------------------|-----------------------------------------------------------|------------------------|
 | `stack.md`                | Technologies, platforms, environments                     | Forge, Shield, Scroll  |
-| `code-style.md`           | Naming, formatting, and coding conventions                | Forge, Shield          |
-| `adrs/*.md`               | Architecture Decision Records                             | Scroll, Forge, Pulse   |
+| `code-style/*`            | Coding conventions by language                            | Forge, Shield          |
+| `adr/*.md`                | Architecture Decision Records                             | Scroll, Forge, Pulse   |
 | `tech-debt.md`            | Known limitations and tech debt backlog                   | Forge, Pulse, Shield   |
 
 ---
@@ -20,10 +20,10 @@ Each file represents a key discipline — engineering, design, product, data, or
 
 | File Name                  | Description                                               | Used By Agents         |
 |---------------------------|-----------------------------------------------------------|------------------------|
-| `branding-guidelines.md`  | Visual identity: logo, color, spacing, usage              | Nova, Quill            |
+| `branding-guidelines.md`  | Visual identity: logo, color, spacing, usage              | Nova, Quill, Pulse     |
 | `tone-of-voice.md`        | Linguistic tone, personality, writing style               | Quill, Echo, Scroll    |
-| `ui-patterns.md`          | Approved interface components and design tokens           | Nova, Echo             |
-| `accessibility.md`        | Guidelines for inclusive and accessible experiences        | Echo, Shield           |
+| `design-system.md`        | Visual principles and reference links to external DS      | Nova, Echo             |
+| `user-experience.md`      | Experience goals and emotional intent                     | Echo, Shield           |
 
 ---
 
@@ -32,9 +32,9 @@ Each file represents a key discipline — engineering, design, product, data, or
 | File Name                  | Description                                               | Used By Agents         |
 |---------------------------|-----------------------------------------------------------|------------------------|
 | `product-vision.md`       | Mission, audience, goals, value proposition               | Pulse, Scope, Forge    |
-| `feature-priorities.md`   | Roadmap items, prioritization rationale                   | Pulse, Scope           |
-| `personas.md`             | User archetypes and segments                              | Echo, Pulse            |
-| `market-positioning.md`   | Competitive value, messaging pillars                      | Pulse, Scope, Quill    |
+| `user-personas.yaml`      | Core user types and motivations                           | Echo, Pulse, Quill     |
+| `go-to-market.md`         | Strategic launch and positioning plan                     | Pulse, Scope           |
+| `market-positioning.md`   | Competitive narrative and messaging strategy              | Pulse, Scope, Quill    |
 
 ---
 
@@ -42,9 +42,19 @@ Each file represents a key discipline — engineering, design, product, data, or
 
 | File Name                  | Description                                               | Used By Agents         |
 |---------------------------|-----------------------------------------------------------|------------------------|
-| `metrics-guide.md`        | KPIs, OKRs, conversion goals                              | Pulse, Scope, Echo     |
-| `analytics-specs.md`      | Events tracked, schema, tool usage (e.g. GA, Mixpanel)    | Echo, Shield           |
-| `retention-cohorts.md`    | Behavior analysis of user segments                        | Pulse, Scope           |
+| `analytics-metrics.md`    | KPIs, OKRs, user behavior, funnel events                  | Pulse, Scope, Echo     |
+| `data-modeling.md`        | Entity structure, relationships, core datasets            | Forge, Shield, Scroll  |
+| `retention-cohorts.md`    | Segment behavior analysis and lifecycle mapping           | Pulse, Scope           |
+
+---
+
+## 🧠 Knowledge & Documentation
+
+| File Name                  | Description                                               | Used By Agents         |
+|---------------------------|-----------------------------------------------------------|------------------------|
+| `adr/*.md`                | Technical or product decisions (duplicated intentionally) | Scroll, Forge, Pulse   |
+| `onboarding-guide.md`     | Dev onboarding, processes, how-tos                        | Scroll, Pulse          |
+| `internal-wiki.md`        | Miscellaneous team knowledge and tribal history           | Scroll                 |
 
 ---
 
@@ -61,8 +71,12 @@ Each file represents a key discipline — engineering, design, product, data, or
 
 ## 🧭 How to Use
 
-- Use clear formatting: headlines, bullet points, and structured sections
-- Each file should be created using the [template.md](../templates/template.md)
-- Reference these files in your `project.yaml` under `context.files`
-- Agents will load only the relevant documents from this list
+- Format all files using headlines, bullet points, and structured sections
+- Use templates from `templates/default/{discipline}/`
+- Reference the relevant files in `project.yaml` under `context.files`
+- Agents will only consume the files listed in that context
 
+---
+
+> This file serves as a shared contract between creators and agents.  
+> A well-mapped project structure = a well-orchestrated AI team.

@@ -1,0 +1,53 @@
+id: data-modeling
+title: "Data Modeling & Domain Structure"
+description: >
+  Defines the core entities, relationships, business rules, and storage mappings that shape the product’s data architecture.
+  Enables agents to interact with structured data safely and consistently.
+
+used_by_agents:
+  - Forge
+  - Shield
+  - Scroll
+  - Pulse
+
+required_sections:
+  - "🎯 Purpose"
+  - "🧠 Used by Agents"
+  - "🧩 Core Entities"
+  - "🔗 Relationships"
+  - "✅ Business Rules & Constraints"
+  - "📁 Storage Mapping"
+  - "🧠 Schema Versioning Strategy"
+  - "🧪 Example: Data Flow Summary"
+  - "✅ Compliance Checklist"
+  - "📚 Reference Links"
+
+entity_required_fields:
+  - name
+  - description
+  - primary_keys
+  - storage_layer
+
+relationship_requirements:
+  - source_entity
+  - target_entity
+  - cardinality
+  - directionality
+
+compliance_checklist:
+  - "Are all key entities described with purpose, keys, and structure?"
+  - "Are entity relationships defined with direction and multiplicity?"
+  - "Are core business rules and data integrity constraints explicit?"
+  - "Is the database/storage mapping consistent and annotated?"
+  - "Does the model describe schema evolution/versioning clearly?"
+  - "Can agents locate and reference this structure in execution logic?"
+
+reference_links:
+  - label: "Martin Fowler – ORM and Data Modeling"
+    url: "https://martinfowler.com/articles/orm.html"
+  - label: "PostgreSQL Best Practices"
+    url: "https://www.postgresql.org/docs/"
+  - label: "Prisma Schema Reference"
+    url: "https://www.prisma.io/docs/concepts/components/prisma-schema"
+  - label: "JSON Schema Versioning Strategies"
+    url: "https://json-schema.org/"

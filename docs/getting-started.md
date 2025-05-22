@@ -1,24 +1,26 @@
 # 🚀 Getting Started with CraftAI
 
 Welcome to CraftAI — a human–AI framework for building software with hybrid teams.  
-This guide will walk you through how to set up, configure, and run your first CraftAI project.
+This guide walks you through how to set up, configure, and run your first CraftAI project.
 
 ---
 
 ## 📁 Project Structure
 
-Your CraftAI project should follow this base structure:
+Your CraftAI project should follow this structure:
 
 ```
 craftai/
-├── agents/                # Agent definitions (.yaml)
-│   ├── Forge.yaml
-│   └── ...
+├── templates/
+│   └── default/
+│       ├── agents/
+│       └── branding/, tech/, product/, ...
 ├── projects/
 │   └── your-project/
 │       └── project.yaml
-├── branding/, tech/, ...  # Context folders referenced in project.yaml
-└── docs/                  # Documentation like this guide
+├── docs/
+│   ├── getting-started.md
+│   └── file-disciplines.md
 ```
 
 ---
@@ -34,14 +36,14 @@ cd craftai
 
 ## 2️⃣ Step 2 — Explore Available Agents
 
-Each agent is defined in `./agents/` and includes:
+Each agent is defined in `./templates/default/agents/` and includes:
 
 - A persona definition (`persona_prompt`)
-- Skills and examples
+- Skills and behavior rules
 - Files they rely on (`file_context`)
-- Rules they follow strictly
+- Real-world examples of usage
 
-📄 Check [`./agents/README.md`](../agents/README.md) for a full list.
+📄 See [`agents/README.md`](../templates/default/agents/README.md) for an overview.
 
 ---
 
@@ -50,44 +52,68 @@ Each agent is defined in `./agents/` and includes:
 Inside `./projects/your-project/`, create a `project.yaml`.  
 This file declares:
 
-- The project goals and description
-- Which agents are involved
-- What context files are available (branding, vision, code style, etc.)
+- The project name, goals, and context
+- Which agents are involved and enabled
+- The files that agents should reference
 
-> 📁 See `project.en.yaml` in the root folder for an example.
+📁 See `projects/your-project/project.yaml` for a working example.
 
 ---
 
 ## 4️⃣ Step 4 — Start Orchestrating
 
-CraftAI doesn’t require a UI to start. You can use ChatGPT or any LLM interface to orchestrate the agents by giving prompts like:
+CraftAI doesn’t require a UI. You can use any LLM interface (e.g. ChatGPT, Claude) to act as the Orchestrator.
 
-> “Forge, create a Flutter app scaffold based on Clean Architecture.”  
-> “Quill, write a recruitment headline aligned with our tone of voice.”  
-> “Echo, suggest UX improvements for the onboarding form.”
+Just give a prompt like:
 
-The agent uses its `.yaml` profile and relevant context to execute the task.
+> “Forge, scaffold a Flutter app using Clean Architecture.”  
+> “Quill, write a landing page headline aligned with our tone of voice.”  
+> “Echo, suggest UX improvements for our onboarding screen.”
+
+The agent uses its `.yaml` profile and relevant context files to execute the task.
 
 ---
 
 ## 🧠 Tips for Prompting Agents
 
-- Address the agent by name (e.g. "Forge", "Quill")
-- Be specific but concise in what you want
-- Let the agent know which project and context it's working with
+- Address the agent by name (e.g. "Forge", "Nova")
+- Be concise but specific about what you want
+- Mention which project you're working on if applicable
+- Ask for explanations or step-by-step output when needed
 
 ---
 
-## 🧪 Want to Add a New Agent?
+## 🛠 Want to Add a New Agent?
 
-1. Duplicate any `.yaml` file in `/agents/`
-2. Customize the `id`, `title`, `persona_prompt`, and skillset
-3. Reference it in your `project.yaml` to activate
+1. Copy any `.yaml` file in `/templates/default/agents/`
+2. Customize `id`, `title`, `persona_prompt`, `skills`, and `rules`
+3. Add the agent to your `project.yaml` under the `agents:` section
+
+> Agents are fully modular — define the team you need per project.
+
+---
+
+## 🧪 Runtime (Coming Soon)
+
+CraftAI will soon support a local execution engine via CLI.
+
+```bash
+npx craftai run projects/your-project
+```
+
+Until then, agent execution happens via manual prompt orchestration in any LLM.
+
+---
+
+## 🧭 Learn More
+
+- 📚 See [`docs/file-disciplines.md`](./file-disciplines.md) for all supported file types and their purpose  
+- 📄 Explore each agent in [`templates/default/agents/`](../templates/default/agents/)  
+- 🧰 Use templates in `templates/default/` to build your context files
 
 ---
 
 ## 💬 Questions?
 
-Open an issue or ping us at [bs3.dev](https://bs3.dev).  
+Open an issue or reach us at [bs3.dev](https://bs3.dev).  
 We'd love to hear how you're crafting with AI.
-

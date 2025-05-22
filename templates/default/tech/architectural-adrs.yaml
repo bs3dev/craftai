@@ -1,0 +1,41 @@
+id: architectural-adrs
+title: "Architectural Decision Records"
+description: >
+  Defines the structure, format, and validation criteria for Architectural Decision Records (ADRs).  
+  ADRs document critical technical decisions over the life of the product — including rationale, trade-offs, and consequences.
+
+used_by_agents:
+  - Pulse
+  - Forge
+  - Shield
+  - Scope
+
+adr_storage:
+  path: ./tech/adr/
+  file_pattern: "ADR-*.md"
+
+required_sections:
+  - "📌 Status"
+  - "🎯 Context"
+  - "🧠 Decision"
+  - "⚖️ Alternatives Considered"
+  - "✅ Consequences"
+  - "📚 References (if any)"
+  - "🆔 ADR Metadata (ID, Date, Author)"
+
+adr_statuses:
+  - proposed
+  - accepted
+  - superseded
+  - deprecated
+  - rejected
+
+adr_filename_convention: "ADR-<ID>-<title>.md"
+
+compliance_checklist:
+  - "Does the file follow the naming convention (e.g., ADR-001-use-event-driven.md)?"
+  - "Is the status field defined and valid (accepted, proposed, etc)?"
+  - "Are context and decision sections clearly written and specific?"
+  - "Are trade-offs or alternatives listed and evaluated?"
+  - "Are consequences (positive and negative) documented?"
+  - "Is the ADR cross-referenced if superseded or replaced?"

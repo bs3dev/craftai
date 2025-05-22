@@ -1,4 +1,4 @@
-# CraftAI
+# 🧠 CraftAI
 
 **Build with soul. Code with intelligence.**  
 A human–AI framework to build software like craftwork — with speed, precision, and artistry.
@@ -29,10 +29,10 @@ Instead of replacing humans, we empower them to **orchestrate intelligent agents
 
 | Concept | Description |
 |--------|-------------|
-| **Agent** | An autonomous unit that follows structured behavior (defined in Markdown or JSON). |
+| **Agent** | An autonomous unit that follows structured behavior (defined in YAML + Markdown). |
 | **Orchestrator** | The human (you) who delegates and validates agent actions. |
-| **Playbook** | A set of tasks agents can perform (e.g., refactor, test, document). |
-| **Execution Engine** | The runtime that reads agent instructions and applies them to your repo. |
+| **Disciplines** | Files that provide context: product vision, branding, stack, UX, etc. |
+| **Project** | A configuration file (`project.yaml`) that activates a squad of agents on a mission. |
 
 ---
 
@@ -40,46 +40,37 @@ Instead of replacing humans, we empower them to **orchestrate intelligent agents
 
 > Coming soon: `npx craftai` and a full agent execution engine.
 
-While that’s in progress, here’s what you can explore:
+While the execution engine is in development, you can explore the framework manually:
 
 ```bash
 git clone https://github.com/bs3dev/craftai.git
 cd craftai
 ```
 
-- Browse the [`agents/`](./agents) folder to see example agent definitions
-- Read [`CRAFTAI.md`](./CRAFTAI.md) for architectural philosophy
-- Check [`examples/`](./examples) for real-world usage
+Then:
 
----
+* 📁 Navigate to templates/default/ to see the full agent setup and discipline templates
+* 📁 Copy projects/your-project and rename it to start your own mission
+* ✍️ Edit the project.yaml file to activate agents and link contextual files
+* 🧠 Call agents through your preferred LLM (e.g. GPT-4, Claude) and prompt execution manually
 
-## 🛠 Example Use Cases
+📁 Example Use Cases
 
-- ✨ Generate a landing page from a one-line prompt
-- 🔍 Refactor legacy code using architectural constraints
-- 🧪 Write and run unit tests for a newly pushed PR
-- 📚 Auto-document internal tools or APIs
+* ✨ Generate a landing page from a one-line prompt
+* 🔍 Refactor legacy code using architectural constraints
+* 🧪 Write and run unit tests for a newly pushed PR
+* 📚 Auto-document internal tools or APIs
 
----
-
-## 📐 Philosophy
+📐 Philosophy
 
 CraftAI is built on the belief that:
-- Software is a **creative endeavor**.
-- Developers should spend more time **designing systems**, not pushing syntax.
-- AI is not a tool — it’s a **teammate**.
+* Software is a creative endeavor.
+* Developers should spend more time designing systems, not pushing syntax.
+* AI is not a tool — it’s a teammate.
 
 If you believe in building with intention, intelligence, and soul — this is your framework.
 
----
+📣 Join the Craft
 
-## 📣 Join the Craft
-
-> CraftAI is in active development by [bs3.dev](https://bs3.dev), and will soon be open for contributors.  
+CraftAI is in active development by bs3.dev, and will soon be open for contributors.
 Stay tuned — or open an issue to co-create this future with us.
-
----
-
-## 📄 License
-
-[MIT](./LICENSE)

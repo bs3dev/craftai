@@ -1,0 +1,55 @@
+id: design-system
+title: "Design System Reference Guide"
+description: >
+  Reference document that connects the product to its external design system sources.  
+  Guides agents on how to interpret and apply the system's visual and interactive rules.
+
+used_by_agents:
+  - Nova
+  - Forge
+  - Echo
+  - Scroll
+
+design_system_sources:
+  - label: "Figma Library"
+    url: "https://figma.com/file/XXXX"
+    notes: "Main component and token set"
+
+  - label: "Storybook"
+    url: "https://design.company.com/storybook"
+    notes: "Live preview of components and states"
+
+  - label: "Token Documentation"
+    url: "https://zeroheight.com/p/brand-guidelines"
+    notes: "Spacing, typography, colors"
+
+  - label: "Design System GitHub"
+    url: "https://github.com/org/design-system"
+    notes: "Component codebase and CI-ready library"
+
+required_sections:
+  - "🎯 Purpose"
+  - "🧠 Used by Agents"
+  - "📁 Design System Sources"
+  - "🧩 What the Design System Defines"
+  - "🧠 How Agents Should Use It"
+  - "🤖 API / Component Access"
+  - "✅ Compliance Checklist"
+  - "📚 Reference Links"
+
+compliance_checklist:
+  - "Do components match names and states from the source?"
+  - "Are design tokens used instead of hardcoded styles?"
+  - "Are layouts aligned with the documented system grid?"
+  - "Is contrast and accessibility respected?"
+  - "Are agents referencing Storybook or Figma as primary sources?"
+
+reference_links:
+  - label: "Google Material 3 (M3)"
+    url: "https://m3.material.io/"
+  - label: "Design Systems Handbook"
+    url: "https://www.designbetter.co/design-systems-handbook"
+  - label: "Storybook Accessibility Addon"
+    url: "https://storybook.js.org/addons/@storybook/addon-a11y/"
+  - label: "Design Tokens W3C Format"
+    url: "https://design-tokens.github.io/community-group/format/"

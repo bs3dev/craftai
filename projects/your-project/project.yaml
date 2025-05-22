@@ -1,0 +1,83 @@
+# ===============================================
+#  CraftAI Project Definition
+#  Template: default
+# ===============================================
+
+project:
+  id: your-project
+  name: "Your Project Name"
+  description: |
+    Brief description of what this project aims to solve or build.
+    This can be a landing page, a backend service, a mobile app — or all of them together.
+  goals:
+    - Define clear outcomes and user value
+    - Build fast with quality and consistency
+    - Leverage AI agents to accelerate delivery
+  owner: "Your Name or Team"
+  priority: high
+
+agents:
+  - id: Forge
+    path: ../../templates/default/agents/forge.yaml
+    role: "Builds, connects, and maintains the code structure."
+    enabled: true
+
+  - id: Nova
+    path: ../../templates/default/agents/nova.yaml
+    role: "Designs UI components and visual layout."
+    enabled: true
+
+  - id: Quill
+    path: ../../templates/default/agents/quill.yaml
+    role: "Writes content, UX copy, and CTAs."
+    enabled: true
+
+  - id: Echo
+    path: ../../templates/default/agents/echo.yaml
+    role: "Improves usability and user journey flow."
+    enabled: true
+
+  - id: Shield
+    path: ../../templates/default/agents/shield.yaml
+    role: "Validates quality, tests, and security."
+    enabled: true
+
+  - id: Pulse
+    path: ../../templates/default/agents/pulse.yaml
+    role: "Ensures alignment with product vision and business strategy."
+    enabled: true
+
+  - id: Scope
+    path: ../../templates/default/agents/scope.yaml
+    role: "Provides market intelligence and competitor benchmarks."
+    enabled: false
+
+  - id: Scroll
+    path: ../../templates/default/agents/scroll.yaml
+    role: "Documents features, decisions, and architecture."
+    enabled: false
+
+context:
+  repo: ./projects/your-project
+
+  files:
+    branding_guidelines: ../../templates/default/branding/*
+    technical_stack: ../../templates/default/tech/stack.md
+    code_conventions: ../../templates/default/tech/code-style/*
+    architectural_adrs: ../../templates/default/tech/adr/*.md
+    tone_of_voice: ../../templates/default/content/tone-of-voice.md
+    product_vision: ../../templates/default/product/product-vision.md
+    analytics: ../../templates/default/data/analytics-metrics.md
+    personas: ../../templates/default/product/user-personas.yaml
+
+  assets:
+    - ../../templates/default/branding/logo.svg
+    - ../../templates/default/branding/palette.md
+
+  constraints:
+    - "Respect accessibility and mobile-first principles"
+    - "Align with the product’s core values and brand identity"
+    - "Ensure code is testable and maintainable by design"
+
+  tone: "Visionary, clear, and empowering"
+  audience: "Developers, end-users, internal stakeholders"

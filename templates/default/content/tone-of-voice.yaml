@@ -1,0 +1,45 @@
+id: tone-of-voice
+title: "Tone of Voice Guidelines"
+description: >
+  Defines how the brand communicates across all touchpoints — from interface copy to customer support.
+  It ensures consistency in tone, emotional clarity, and user empathy throughout the product experience.
+
+used_by_agents:
+  - Quill
+  - Echo
+  - Scroll
+
+key_elements:
+  - brand_voice_profile
+  - voice_pillars
+  - dos_and_donts
+  - example_phrases
+  - inclusivity_guidelines
+  - when_to_apply
+  - consistency_checklist
+
+required_sections:
+  - "🧬 Brand Voice Profile"
+  - "🗣️ Core Voice Pillars"
+  - "📌 Do’s and Don’ts"
+  - "📝 Example Phrases (Before & After)"
+  - "🌍 Multilingual & Inclusive Communication"
+  - "🎯 When to Apply This"
+  - "✅ Consistency Checklist"
+  - "📚 Reference Links"
+
+reference_links:
+  - label: "Nubank Tone of Voice"
+    url: "https://building.nubank.com.br/nu-brand-system/"
+  - label: "Mailchimp Content Style Guide"
+    url: "https://mailchimp.com/content-style-guide/"
+  - label: "Inclusive Design Principles"
+    url: "https://inclusivedesignprinciples.org/"
+
+compliance_checklist:
+  - "Are the tone dimensions (tone, emotion, vocabulary) clearly defined?"
+  - "Are core voice pillars consistently reflected in copy?"
+  - "Are before/after examples provided for key scenarios?"
+  - "Is the tone applicable and adaptable across different channels and states?"
+  - "Are inclusivity and accessibility considerations documented?"
+  - "Does the tone balance personality with clarity and functionality?"

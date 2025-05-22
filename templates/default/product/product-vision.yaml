@@ -1,0 +1,44 @@
+id: product-vision
+title: "Product Vision"
+description: >
+  Defines the long-term direction, purpose, and strategic focus of the product.
+  It serves as a shared compass for all agents and stakeholders to align execution with user needs, market context, and business goals.
+
+used_by_agents:
+  - Pulse
+  - Forge
+  - Scope
+
+key_elements:
+  - product_purpose
+  - target_audience
+  - unique_value_proposition
+  - core_features
+  - market_differentiation
+  - success_metrics
+  - strategic_alignment
+
+required_sections:
+  - "🎯 Product Purpose"
+  - "👥 Target Audience"
+  - "💎 Unique Value Proposition (UVP)"
+  - "🧩 Key Features"
+  - "🚀 Differentiation in the Market"
+  - "📈 Success Metrics (Vision KPIs)"
+  - "🏢 Alignment with Company Objectives"
+  - "📚 Reference Links"
+
+reference_links:
+  - label: "Mural – Product Vision"
+    url: "https://www.mural.co/blog/product-vision"
+  - label: "Martin Fowler – Writing Product Vision"
+    url: "https://martinfowler.com/articles/lean-inception/write-product-vision.html"
+
+compliance_checklist:
+  - "Is the product purpose meaningful and clearly stated?"
+  - "Is the target audience defined with specific needs?"
+  - "Is the value proposition unique, credible, and compelling?"
+  - "Are the key features tightly mapped to the UVP?"
+  - "Is market differentiation specific and not generic?"
+  - "Are success metrics measurable and aligned with long-term impact?"
+  - "Is the product vision explicitly linked to company-level objectives?"

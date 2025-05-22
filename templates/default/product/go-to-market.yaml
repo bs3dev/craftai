@@ -1,0 +1,58 @@
+id: go-to-market
+title: "Go-To-Market Strategy"
+description: >
+  Defines the strategic foundation for launching the product into the market — including audiences, messaging, channels, and KPIs.
+  Ensures alignment between product vision and market execution.
+
+used_by_agents:
+  - Focus
+  - Pulse
+  - Echo
+  - Scroll
+
+required_sections:
+  - "🎯 Purpose"
+  - "🧠 Used by Agents"
+  - "🎯 Target Audience & Segments"
+  - "📣 Messaging Pillars"
+  - "📡 Channels & Tactics"
+  - "🧪 Success Metrics"
+  - "📚 Strategic Assets"
+  - "✅ Compliance Checklist"
+  - "📚 Reference Links"
+
+segment_attributes:
+  - segment_name
+  - description
+  - relevance
+
+messaging_attributes:
+  - pillar
+  - message_example
+
+channel_attributes:
+  - channel
+  - format
+  - notes
+
+metrics_attributes:
+  - metric
+  - description
+  - target
+
+compliance_checklist:
+  - "Are all audience segments clearly described and prioritized?"
+  - "Do messaging pillars connect user needs to product value?"
+  - "Are channels chosen based on audience habits?"
+  - "Are success metrics SMART (specific, measurable, etc)?"
+  - "Are all GTM assets referenced or linked?"
+
+reference_links:
+  - label: "Lenny’s GTM Framework"
+    url: "https://www.lennysnewsletter.com/p/the-ultimate-guide-to-go-to-market"
+  - label: "Y Combinator – Product Launch"
+    url: "https://www.ycombinator.com/library/6o-launching"
+  - label: "April Dunford – Positioning Book"
+    url: "https://www.aprildunford.com/positioning-book"
+  - label: "Product Marketing Alliance – Launch Checklist"
+    url: "https://www.productmarketingalliance.com/ultimate-product-launch-checklist/"

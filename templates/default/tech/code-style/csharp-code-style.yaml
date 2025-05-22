@@ -1,0 +1,52 @@
+id: csharp-code-style
+title: "C# Code Style & Clean Coding Guidelines"
+description: >
+  Defines naming conventions, formatting rules, and clean code practices for C# projects.  
+  Based on Microsoft standards and Clean Code principles, it enables consistency and readability across the stack.
+
+used_by_agents:
+  - Forge
+  - Shield
+  - Scroll
+
+key_elements:
+  - naming_conventions
+  - code_formatting
+  - clean_code_principles
+  - comments_and_docs
+  - testing
+  - project_structure
+  - linting_tooling
+
+required_sections:
+  - "🎯 Purpose"
+  - "🧠 Used by Agents"
+  - "🧬 Naming Conventions"
+  - "🧩 Formatting & Structure"
+  - "🧱 Clean Code Principles"
+  - "🧹 Comments & Documentation"
+  - "🧪 Testing & Quality Assurance"
+  - "📁 Project Structure"
+  - "🔧 Tooling & Automation"
+  - "✅ Consistency Checklist"
+  - "📚 Reference Links"
+
+reference_links:
+  - label: "Microsoft C# Coding Conventions"
+    url: "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions"
+  - label: "C# Identifier Naming Rules"
+    url: "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names"
+  - label: "Clean Code by Uncle Bob"
+    url: "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882"
+  - label: "Refactoring by Martin Fowler"
+    url: "https://martinfowler.com/books/refactoring.html"
+  - label: "Martin Fowler – Clean Code Articles"
+    url: "https://martinfowler.com/tags/clean%20code.html"
+
+compliance_checklist:
+  - "Are naming and casing conventions applied consistently?"
+  - "Is indentation set to 4 spaces, with proper use of braces?"
+  - "Are Clean Code principles (SRP, DRY, KISS, YAGNI) evident?"
+  - "Are meaningful unit and integration tests implemented?"
+  - "Is static analysis integrated with CI/CD?"
+  - "Does project structure promote separation of concerns?"

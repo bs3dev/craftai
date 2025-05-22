@@ -1,0 +1,33 @@
+id: code-style
+title: "Code Style Guidelines Index"
+description: >
+  Lists all language- or platform-specific code style documents used in this project.  
+  Each file defines formatting, naming, tooling, and clean code principles to guide human and AI development.
+
+used_by_agents:
+  - Forge
+  - Shield
+  - Scroll
+
+code_style_files:
+  - label: "C#"
+    path: ./tech/code-style/csharp-code-style.md
+
+  - label: "TypeScript (Frontend / React)"
+    path: ./tech/code-style/typescript-frontend-code-style.md
+
+  - label: "Dart / Flutter"
+    path: ./tech/code-style/dart-code-style.md
+
+  - label: "SQL / PostgreSQL"
+    path: ./tech/code-style/sql-code-style.md
+
+  - label: "Python (Scripts / Data)"
+    path: ./tech/code-style/python-code-style.md
+
+compliance_checklist:
+  - "Is each code style document scoped to a specific language or tool?"
+  - "Do all files define naming, structure, and tooling rules?"
+  - "Are style documents used by the right agents (Forge, Shield, Scroll)?"
+  - "Are formatting and linting tools explicitly listed?"
+  - "Are all documents written in prompt-friendly structure (clear sections, headings)?"

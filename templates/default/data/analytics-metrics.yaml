@@ -1,0 +1,44 @@
+id: analytics-metrics
+title: "Product Analytics & Success Metrics"
+description: >
+  Defines the structure and expectations for product metrics.  
+  Used to monitor adoption, engagement, monetization, retention, and custom agent-specific signals.
+
+used_by_agents:
+  - Pulse
+  - Scope
+  - Scroll
+  - Focus
+
+metric_categories:
+  - adoption
+  - engagement
+  - conversion_and_revenue
+  - retention_and_health
+  - custom_contextual
+
+required_sections:
+  - "🎯 Purpose"
+  - "🧠 Used by Agents"
+  - "🧩 Core Metric Categories"
+  - "📚 Custom / Contextual Metrics"
+  - "🧠 Metric Usage by Agents"
+  - "✅ Compliance Checklist"
+  - "📚 Reference Links"
+
+reference_links:
+  - label: "Mixpanel Product Analytics Guide"
+    url: "https://mixpanel.com/blog/product-analytics/"
+  - label: "Amplitude Metrics Taxonomy"
+    url: "https://www.amplitude.com/blog/metrics-taxonomy"
+  - label: "Lean Analytics Framework"
+    url: "https://leananalyticsbook.com/"
+  - label: "Nubank on Product Metrics"
+    url: "https://building.nubank.com.br/nu-product-metrics/"
+
+compliance_checklist:
+  - "Are all lifecycle stages represented in the metric set?"
+  - "Does each metric include a description and success target?"
+  - "Are metrics grouped by clear categories (adoption, engagement, etc)?"
+  - "Are agent-specific or contextual metrics documented?"
+  - "Can metrics be queried and referenced programmatically?"

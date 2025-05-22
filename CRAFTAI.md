@@ -14,16 +14,16 @@ In CraftAI, **humans orchestrate** — and **agents execute**.
 
 A developer becomes a *conductor*, guiding a team of intelligent agents that perform tasks such as:
 
-- 📦 Implementing features
-- 🧹 Refactoring modules
-- 🧪 Testing and validating code
-- 📄 Writing documentation
-- 🎨 Designing user interfaces
-- 📊 Analyzing architecture
-- 🧭 Refining product strategy
-- 📣 Communicating product value
-- 🔍 Researching competitors and trends
-- 💡 Translating user needs into requirements
+- 📦 Implementing features  
+- 🧹 Refactoring modules  
+- 🧪 Testing and validating code  
+- 📄 Writing documentation  
+- 🎨 Designing user interfaces  
+- 📊 Analyzing architecture  
+- 🧭 Refining product strategy  
+- 📣 Communicating product value  
+- 🔍 Researching competitors and trends  
+- 💡 Translating user needs into requirements  
 
 ---
 
@@ -55,31 +55,36 @@ A developer becomes a *conductor*, guiding a team of intelligent agents that per
 ## ⚙️ Components
 
 ### 1. **Orchestrator (Human Role)**
-- Writes tasks in natural language
-- Assigns agents
-- Reviews and merges output
+
+- Writes tasks in natural language  
+- Assigns agents  
+- Reviews and merges output  
 
 ### 2. **Execution Engine (Planned)**
-- Parses task definitions
-- Dispatches them to the appropriate agents
-- Collects results and presents summaries
+
+- Parses task definitions  
+- Dispatches them to the appropriate agents  
+- Collects results and presents summaries  
 
 ### 3. **Agent Definitions**
-Stored as `.md` or `.json`, each agent includes:
+
+Stored as `.yaml` files, each agent includes:
 
 ```yaml
-name: tech-agent
-description: Writes and refactors code.
+id: Forge
+title: "Forge, the Master Builder"
 skills:
-  - build-feature
-  - improve-code
-  - write-tests
-context:
-  repos: ["frontend/", "backend/"]
-  rules: ["Clean Architecture", "Test Coverage > 80%"]
+  - "Create project scaffolds"
+  - "Refactor legacy code"
+file_context:
+  - technical_stack
+  - architectural_adrs
+rules:
+  - "Follow Clean Architecture"
 ```
 
 ### 4. **Playbooks**
+
 Reusable task templates:
 
 ```yaml
@@ -99,13 +104,13 @@ steps:
 
 ## 🧪 Agent Lifecycle
 
-| Phase | Description |
-|-------|-------------|
-| **Load** | Agent is initialized with access to repo and config |
-| **Understand** | Agent reads task prompt, gathers context |
-| **Plan** | Agent proposes steps and structure |
-| **Act** | Agent performs edits, opens PR |
-| **Validate** | Agent runs tests and/or peer review |
+| Phase       | Description                                       |
+|-------------|---------------------------------------------------|
+| **Load**    | Agent is initialized with access to repo + config |
+| **Understand** | Agent reads task prompt and gathers context     |
+| **Plan**    | Agent proposes steps and structure                |
+| **Act**     | Agent performs edits, opens PR                    |
+| **Validate**| Agent runs tests or submits for review            |
 
 ---
 
@@ -118,13 +123,13 @@ You write the instruction:
 
 CraftAI:
 
-1. Selects the `tech-agent`
-2. Parses the prompt
-3. Generates a plan
-4. Edits the code in `frontend/checkout/`
-5. Runs tests
-6. Opens a PR
-7. Posts the summary back to the orchestrator
+1. Selects the `Forge` agent  
+2. Parses the prompt  
+3. Generates a plan  
+4. Edits the code in `frontend/checkout/`  
+5. Runs tests  
+6. Opens a PR  
+7. Posts the summary back to the orchestrator  
 
 All within minutes.
 
@@ -132,11 +137,11 @@ All within minutes.
 
 ## 🌱 Future Directions
 
-- Agent marketplace (plug third-party agents)
-- Visual orchestrator UI
-- Integration with GitHub Apps & Actions
-- Support for voice-based instructions
-- Real-time collaboration between human & agents
+- Agent marketplace (plug third-party agents)  
+- Visual orchestrator UI  
+- Integration with GitHub Apps & Actions  
+- Support for voice-based instructions  
+- Real-time collaboration between human & agents  
 
 ---
 
@@ -145,4 +150,4 @@ All within minutes.
 CraftAI is not just a framework.  
 It’s a reimagination of how software is created in the age of intelligent systems.
 
-Join the craft.
+**Join the craft.**

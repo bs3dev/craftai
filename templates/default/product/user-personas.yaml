@@ -1,0 +1,47 @@
+id: user-personas
+title: "User Personas"
+description: >
+  Central reference for the product’s user personas.  
+  Each persona is defined in a separate markdown file within ./user-personas/ and follows a consistent structure for agent use.
+
+used_by_agents:
+  - Focus
+  - Pulse
+  - Echo
+  - Forge
+
+personas_path: ./user-personas/
+file_pattern: "*.md"
+
+required_sections:
+  - "🎯 Purpose"
+  - "🧠 Used by Agents"
+  - "👥 Persona Format"
+  - "🧩 Primary Personas"
+  - "🧠 Secondary Personas"
+  - "✅ Compliance Checklist"
+  - "📚 Reference Links"
+
+persona_fields:
+  - name
+  - description
+  - goals
+  - frustrations
+  - behaviors
+  - tools_and_channels
+  - ai_opportunities
+
+compliance_checklist:
+  - "Does each persona file follow the defined field structure?"
+  - "Are goals and pain points meaningful and connected to product capabilities?"
+  - "Are tools/channels realistic and context-specific?"
+  - "Are AI opportunities clearly mapped and actionable?"
+  - "Are all individual files accessible via ./user-personas/ and match the expected pattern?"
+
+reference_links:
+  - label: "IDEO – Human-Centered Design Toolkit"
+    url: "https://www.designkit.org/"
+  - label: "UX Collective – Personas Done Right"
+    url: "https://uxdesign.cc/personas-ux-design-226b5f3ae6d6"
+  - label: "NNGroup – Personas in Product Design"
+    url: "https://www.nngroup.com/articles/persona/"
