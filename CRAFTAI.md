@@ -1,11 +1,7 @@
-# CRAFTAI.md
-
 ## 🧬 Core Architecture of CraftAI
 
 CraftAI is a human–AI framework that enables **multi-agent, multi-task collaboration** for building software.  
 It merges agent-based software thinking with a creative and orchestration-first approach to development.
-
----
 
 ## 🔁 The Shift from Execution to Orchestration
 
